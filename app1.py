@@ -31,7 +31,7 @@ def set_index_datetime(df):
     #ait_time(actual)列の要素が１０００より大きい場合NaNに置き換える
     return df
 
-splash_mountain=pd.read_csv("/Users/yuza/PycharmProjects/untitled4/Altair/2018/splash_mountain.csv")
+splash_mountain=pd.read_csv("https://raw.githubusercontent.com/BanquetKuma/disneykuma/master/splash_mountain.csv")
 splash_mountain["attractions"]="Splash Mountain"
 splash_mountain=set_index_datetime(splash_mountain)
 splash_mountain["Longtitude"]=-81.585040
