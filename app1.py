@@ -126,7 +126,7 @@ df["Wait Time(min)"]=df["wait_time(actual)"]
 px.set_mapbox_access_token("pk.eyJ1IjoiYmFucXVldGt1bWEiLCJhIjoiY2p0YjZ4bGJ2MGlseTN5bzlxcnlsbW8xNCJ9.udbxOpc2gZQcUX4m1VIqBg")
 #mapboxのtokenを読み込む
 
-pp=px.scatter_mapbox(df,
+px.scatter_mapbox(df,
                   lat="Latitude",
                   lon="Longtitude",
                   color="Wait Time(min)",
@@ -140,11 +140,15 @@ pp=px.scatter_mapbox(df,
                   title="Disney's Animal Kingdom Theme Park Wait Time from {} to {}".format(df["DATETIME"].min(),df["DATETIME"].max()))
 #plotly_expressの描画部分
 
-@route("/")
-def kumapx():
-    return pp
+#@route("/")
+#def kumapx():
+#    return pp
 
-run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+#run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
 
 
