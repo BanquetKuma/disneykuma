@@ -142,7 +142,7 @@ pp=px.scatter_mapbox(df,
 
 @route("/")
 def kumapx():
-    return pp
+    return "hello kuma!"
 
 run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
