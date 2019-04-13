@@ -126,7 +126,7 @@ df["Wait Time(min)"]=df["wait_time(actual)"]
 px.set_mapbox_access_token("pk.eyJ1IjoiYmFucXVldGt1bWEiLCJhIjoiY2p0YjZ4bGJ2MGlseTN5bzlxcnlsbW8xNCJ9.udbxOpc2gZQcUX4m1VIqBg")
 #mapboxのtokenを読み込む
 
-px.scatter_mapbox(df,
+pp=px.scatter_mapbox(df,
                   lat="Latitude",
                   lon="Longtitude",
                   color="Wait Time(min)",
