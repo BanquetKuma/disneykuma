@@ -140,15 +140,15 @@ px.scatter_mapbox(df,
                   title="Disney's Animal Kingdom Theme Park Wait Time from {} to {}".format(df["DATETIME"].min(),df["DATETIME"].max()))
 #plotly_expressの描画部分
 
-#@route("/")
-#def kumapx():
-#    return pp
+@route("/")
+def kumapx():
+    return pp
 
-#run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+#if __name__ == "__main__":
+    #port = int(os.environ.get("PORT", 5000))
+    #app.run(host="0.0.0.0", port=port)
 
 
 
