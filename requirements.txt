@@ -45,7 +45,7 @@ isort==4.3.16
 itsdangerous==1.1.0
 japanize-matplotlib==1.0.4
 jedi==0.13.2
-Jinja2==2.10
+Jinja2==2.11.3
 jsons==0.5.3
 jsonschema==2.6.0
 jupyter==1.0.0
